@@ -144,7 +144,7 @@ server {
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; listen 80;
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; server_name AWS_PUBLIC_IP;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; server_name **AWS_PUBLIC_IP**;
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location / {
 
@@ -161,6 +161,8 @@ server {
 ctrl-x and then yes to saving, to exit
 ```
 $ sudo ln -s /etc/nginx/sites-available/**PROJECT** /etc/nginx/sites-enabled
+
+$ sudo service nginx restart
 
 # Setting up mysql database
 $ sudo apt-get install mysql-server
